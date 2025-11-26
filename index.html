@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Lịch PWA</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="apple-touch-icon" href="icon-192.png">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Tạo Nhắc Nhở 📅</h1>
+        
+        <label>Nội dung:</label>
+        <input type="text" id="event-title" placeholder="Ví dụ: Đi họp..." value="Việc quan trọng">
+
+        <label>Thời gian:</label>
+        <input type="datetime-local" id="event-time">
+
+        <button id="btn-create">Thêm vào Lịch iPhone</button>
+        
+        <p class="guide">👉 Bấm nút Share chọn "Thêm vào MH chính" để dùng như App.</p>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
